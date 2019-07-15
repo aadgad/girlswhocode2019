@@ -20,7 +20,7 @@ for trys in range (2):
         break
 
     elif guess !=  aRandomNumber:
-        trys-=1
+        #trys-=1
 
         if(guess>aRandomNumber):
             print("Guess lower")
