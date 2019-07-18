@@ -27,24 +27,22 @@ maxfails = numofletters +3
 fails = 0
 cguess =0
 while fails < maxfails:
-    guess = input("\n Guess a letter: ")
+    guess = input("\n Guess a letter: *Hint...the words are chemistry related AND YOU HAVE TO GUESS LETTER BY LETTER, even if you get the word")
     guesses.append(guess)
     #print(guesses)
-
     itir = 0
-
 
     for let in word:
         if guess == let:
             current_word[itir]= guess
             cguess += 1
-            print(cguess)
         itir+=1
     if cguess == len(word):
         print("Yay, you guessed the word!!")
         break
-    #print(current_word)
-
+    if not guess.isalpha():
+        print("This is not a letter. Guess again!")
+    #elif guess.length
 
 
 	# check if the guess is valid: Is it one letter? Have they already guessed it?
