@@ -1,4 +1,3 @@
-
 from random import *
 import random
 
@@ -24,7 +23,7 @@ def guesstheletter():
     numofletters=0
     for letter in word:
         letters_word = letter
-        print(letters_word)
+        #print(letters_word)
         numofletters+=1
     #print(numofletters)
     for i in range(numofletters-2):
