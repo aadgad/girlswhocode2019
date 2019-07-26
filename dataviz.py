@@ -83,7 +83,7 @@ plt.hist(polarity, bins = [-1.1, -.75, -0.5, -.25, 0, 0.25, 0.5, 0.75, 1.1])
 plt.axis([-1, 1, 0, 75])
 
 plt.grid(True)
-#plt.show()
+plt.show()
 
 
 plot.ylabel("number of tweets")
@@ -93,7 +93,7 @@ plot.hist(subj, bins = [ 0, 0.25, 0.5, 0.75, 1.1])
 plot.axis([ 0, 1, 0, 75])
 
 plot.grid(True)
-#plot.show()
+plot.show()
 
 scat.ylabel("subjectivity values")
 scat.xlabel("polarity values")

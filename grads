@@ -1,0 +1,15 @@
+import school_scores
+import json
+from textblob import TextBlob
+import matplotlib.pyplot as plt
+
+
+listofscores = school_scores.get_all()
+print(listofscores)
+
+# state name Year
+
+for row in listofscores:
+    print(row["State"]["Name"], row["Year"])
+
+#total nuber of test takers
